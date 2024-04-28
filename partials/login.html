@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- ------css for login-------- -->
+<style>
+.container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="password"],
+.container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.container input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.container input[type="submit"]:hover {
+    background-color: #45a049;
+}
+</style>
+<!-- -------loginform------- -->
+<body>
+<div class="container">
+        <h1>Login</h1>
+        <form name="user" method="POST" action="/controllers/login.php"  >
+            <label for="username">name:</label>
+            <input type="text" name="username" >
+            <label for='Email'>mailid:</label>
+            <input type="email" name="mail">
+            <label for="password"> password:</label>
+            <input type='password' name="passcode">
+            <input type="submit" value="Login" name="submit">
+        </form>
+</div>
+</body>
+</html>
